@@ -9,7 +9,10 @@ export default function LandingPage() {
       <section className="section-mae">
          <header className="cabeçalho-lp"> 
 
-            <img src="./images/Group 1.png" width={200} height={60}/>
+            <motion.img src="./images/Group 1.png" width={200} height={60}
+            whileHover={{ scale: 1.3 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}/>
 
             <div className="botao-cabeçalho-lp">
             <button className="bt-login">
@@ -55,33 +58,34 @@ export default function LandingPage() {
 
             <div className="sub-div-2-lp">
 
-               <img src="./images/IDOLS-removebg-preview (1) 1.png"/>
-
                <div className="texto-f2-lp">
-
-                  <h2  className="titulo-3-lp"> O que é uma pessoa, se não as marcas que deixa para trás? </h2>
+               <motion.img src="./images/IDOLS-removebg-preview (1) 1.png" width={250}/>
+                  <div className="texto-1-f2-lp">
+                  <h2  className="titulo-3-lp"> O que é uma pessoa se não as <span className="cor-txt">marcas</span> que deixa para trás? </h2>
                   <p className="txt-f2-lp">Porquê a felicidade é breve, mas a história é duradoura e, no fim, todo mundo quer ser lembrado.</p>
+                  </div>
+                  
                </div>
 
-               <div className="desc-f2">
+               <div className="desc-lp">
                   <div className="desc">
-                     <img src="./images/chapeuemaozinha-removebg-preview (1) 1.png"/>
+                     <img src="./images/IMG 2 LP.png" width={200}/>
                      <p className="txt-desc">
-                     Ouça suas músicas favoritas ao vivo aqui!
+                     Descubra os hits dos seus artistas favoritos
                      </p>
                   </div>
 
                   <div className="desc">
-                     <img src="./images/vamp sem fundo 1.png"/>
+                     <img src="./images/LANDINPAGE IMG1.png" width={200}/>
                      <p className="txt-desc">
-                     Maior acessibilidade a produtos originais do seu ídolo do rock.
+                     Maior acessibilidade a produtos originais do seu ídolo do rock
                      </p>
                   </div>
 
                   <div className="desc">
-                     <img src="./images/Project_1-removebg-preview (1) 1.png"/>
+                     <img src="./images/LP 2.png" width={200}/>
                      <p className="txt-desc">
-                     Todos os lançamentos e pré-vendas exclusivas aqui 
+                     Todos os lançamentos e pré-vendas exclusivas aqui!
                      </p>
                   </div>
 
@@ -90,6 +94,31 @@ export default function LandingPage() {
 
             </div>
 
+         </nav>
+
+         <nav className="faixa-3">
+            <div className="sub-div-3">
+               <div className="txt-1-f3">
+                  <h1 className="titulo-f3">
+                  SOBRE NOSSOS ARTISTAS
+                  </h1>
+
+                  <h2 className="subtitulo-f3">
+                  Todos os hits do momento você encontra conosco
+                  </h2>
+                  <p className="txt-f3">
+                  AS MAIORES ESTRELAS DO ROCK QUE O MUNDO JÁ VIU
+                  CONHEÇA NOSSOS ARTISTAS
+                  </p>
+               </div>
+
+               <div className="artistas-f3">
+                  <div>
+
+                  </div>
+
+               </div>
+            </div>
          </nav>
 
       </section>
